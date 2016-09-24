@@ -16,6 +16,12 @@ def read4json(file_path):
     return data
 
 
+def save2json(file_path, data):
+    "Save configuration data to a json file"
+    with open(file_path, 'w') as data_file:
+        json.dump(data, data_file, indent=4)
+
+
 # path to the data
 cortaderos_path = "../datos/cortaderos.json"
 dispensarios_path = "../datos/dispensarios.json"
@@ -121,6 +127,22 @@ def coordinate(latitude, longitude, radio):
             'escuelas': data_escu}
 
     return json.dumps(data)
+
+
+@app.route("/api/cortaderos/nuevo/<latitude>/<longitude>")
+def add_cortadero(latitude, longitude):
+    """
+    Agregar un nuevo cortadero
+    """
+    nuevos_cortaderos = "../datos/cortaderos_nuevos.json"
+    cortadero = read4json(nuevos_cortaderos)["cortaderos"]
+    value = {'coordinate': [float(latitude), float(longitude)]}
+    cortadero.append(value)
+
+    data = {'cortaderos': cortadero}
+    save2json(nuevos_cortaderos, data)
+
+    return "ok"
 
 
 if __name__ == "__main__":
