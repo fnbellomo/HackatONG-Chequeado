@@ -129,8 +129,8 @@ def coordinate(latitude, longitude, radio):
     return json.dumps(data)
 
 
-@app.route("/api/cortaderos/nuevo/<latitude>/<longitude>")
-def add_cortadero(latitude, longitude):
+@app.route("/api/nuevo/cortaderos/<latitude>/<longitude>")
+def nueva_cortadero(latitude, longitude):
     """
     Agregar un nuevo cortadero
     """
@@ -141,6 +141,23 @@ def add_cortadero(latitude, longitude):
 
     data = {'cortaderos': cortadero}
     save2json(nuevos_cortaderos, data)
+
+    return "ok"
+
+
+@app.route("/api/nuevo/escuela/<latitude>/<longitude>/<nombre>")
+def nueva_escuela(latitude, longitude, nombre):
+    """
+    Agregar una nueva escuela
+    """
+    nueva_escuela = "../datos/escuela_nueva.json"
+    escuela = read4json(nueva_escuela)["Escuelas"]
+    value = {'coordinate': [float(latitude), float(longitude)],
+             'nombre': nombre}
+    escuela.append(value)
+
+    data = {'Escuelas': escuela}
+    save2json(nueva_escuela, data)
 
     return "ok"
 
