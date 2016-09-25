@@ -2,49 +2,62 @@
 API simple para visualizar los ladrilleros de cordoba
 desarrollado en el hack(at)ONG 2016
 """
+
 from __future__ import print_function, division
 import json
 from math import sqrt
 
 from flask import Flask
 
+from .utils import read4json, save2json
 
-def read4json(file_path):
-    "Read configuration data form json file and return a list"
-    with open(file_path, 'r') as data_file:
-        data = json.load(data_file)
-    return data
-
-
-def save2json(file_path, data):
-    "Save configuration data to a json file"
-    with open(file_path, 'w') as data_file:
-        json.dump(data, data_file, indent=4)
-
-
-# path to the data
+# path a los datos
 cortaderos_path = "../datos/cortaderos.json"
 dispensarios_path = "../datos/dispensarios.json"
 escuelas_path = "../datos/escuelas.json"
 
 
-# initialization the server
+# creacion del server
 app = Flask(__name__)
-
-
-@app.route("/")
-def hello():
-    return "Hello World!"
 
 
 @app.route("/api/data", methods=['GET'])
 def all():
     """
-    Retorna todos los json en uno solo
+    Retorna en un JSON, la información sobre los cortaderos,
+    escuelas y dispensario.
 
     Return
     ------
     data: json
+
+    Example
+    -------
+
+    { "Cortadores": [
+       {
+        "coordenada": [12, 3],
+        "densidad": 3,
+        "acceso_agua": "string",
+        "acceso_gas": "string"
+       },
+       ...
+    ],
+      "Dispensarios" : [
+       {
+        "coordenadas": [21, 6],
+        "nombre": "string"
+       },
+       ...
+    ],
+      "Escuelas": [
+       {
+        "coordenadas": [36, 7],
+        "nombre": "string",
+        "cod_emp": "string"
+       },
+       ...
+    ]}
     """
     cortadero = read4json(cortaderos_path)
     dispensarios = read4json(dispensarios_path)
