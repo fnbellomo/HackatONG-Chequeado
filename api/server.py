@@ -6,10 +6,11 @@ desarrollado en el hack(at)ONG 2016
 from __future__ import print_function, division
 import json
 from math import sqrt
+from datetime import datetime
 
 from flask import Flask
 
-from .utils import read4json, save2json
+from utils import read4json, save2json
 
 # path a los datos
 cortaderos_path = "../datos/cortaderos.json"
@@ -142,35 +143,43 @@ def coordinate(latitude, longitude, radio):
     return json.dumps(data)
 
 
-@app.route("/api/nuevo/cortaderos/<latitude>/<longitude>")
-def nueva_cortadero(latitude, longitude):
+@app.route("/api/nuevo/<elemento>/<latitude>/<longitude>")
+def nuevo_elemento(elemento, latitude, longitude):
     """
-    Agregar un nuevo cortadero
+    Agrega las coordenadas un nuevo elemento
+    (cortadero, escuela o dispensario)
+
+    Parameters
+    ----------
+    elemento: str
+      Tipo de elemento: cortadero, escuela o dispensario.
+    latitude: float
+      Latidud del nuevo elemento.
+    longitude: float
+      Longitud del nuevo elemento.
+
+    TODO
+    ----
+    * En el caso de que el elemento ingresado no sea un elemento valido,
+      retornar un error http correcto.
+    * En el casode que sea un elemnto valido, retornar el valido de http.
     """
-    nuevos_cortaderos = "../datos/cortaderos_nuevos.json"
-    cortadero = read4json(nuevos_cortaderos)["cortaderos"]
-    value = {'coordinate': [float(latitude), float(longitude)]}
-    cortadero.append(value)
+    elementos_posibles = ['cortadero', 'escuela', 'dispensario']
+    elemento = elemento.lower()
 
-    data = {'cortaderos': cortadero}
-    save2json(nuevos_cortaderos, data)
+    if elemento not in elementos_posibles:
+        return 'Error de elemento'
 
-    return "ok"
+    data_path = "../datos/tentativos/{0}_nuevo.json".format(elemento)
+    data = read4json(data_path)[elemento]
 
-
-@app.route("/api/nuevo/escuela/<latitude>/<longitude>/<nombre>")
-def nueva_escuela(latitude, longitude, nombre):
-    """
-    Agregar una nueva escuela
-    """
-    nueva_escuela = "../datos/escuela_nueva.json"
-    escuela = read4json(nueva_escuela)["Escuelas"]
+    # nuevo dato
     value = {'coordinate': [float(latitude), float(longitude)],
-             'nombre': nombre}
-    escuela.append(value)
+             'date': str(datetime.now())}
+    data.append(value)
 
-    data = {'Escuelas': escuela}
-    save2json(nueva_escuela, data)
+    data = {elemento: data}
+    save2json(data_path, data)
 
     return "ok"
 
