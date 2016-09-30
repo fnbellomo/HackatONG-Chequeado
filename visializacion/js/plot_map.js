@@ -74,10 +74,22 @@ function initMap() {
     // -----------------------------------------------------------------
     // Cortadero infowindow
     cortaderosLayer.addListener('click', function (event) {
+	// I cant pass data with space to the modal.
+	// Replace the space with '_'
+	var name = event.feature.getProperty('name').split(' ').join('_');
+	var coord = event.latLng.toString().split(' ').join('_');
+
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h3>' + event.feature.getProperty('name') + '</h3>' +
-			      'Densidad: ' + event.feature.getProperty('densidad'));
+			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
+			      'Densidad: ' + event.feature.getProperty('densidad') + '<br/>' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
+			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'Modificar</button>' + 
+			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
+			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'Eliminar</button>');
+
 	// Position of the point
         var anchor = new google.maps.MVCObject();
         anchor.setValues({
@@ -89,9 +101,20 @@ function initMap() {
 
     // Health infowindow
     healthLayer.addListener('click', function (event) {
+	// I cant pass data with space to the modal.
+	// Replace the space with '_'
+	var name = event.feature.getProperty('name').split(' ').join('_');
+	var coord = event.latLng.toString().split(' ').join('_');
+
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h3>' + event.feature.getProperty('name') + '</h3>');
+			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
+			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'Modificar</button>' + 
+			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
+			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'Eliminar</button>');
 	// Position of the point
         var anchor = new google.maps.MVCObject();
         anchor.setValues({
@@ -103,9 +126,20 @@ function initMap() {
 
     // Education infowindow
     educationLayer.addListener('click', function (event) {
+	// I cant pass data with space to the modal.
+	// Replace the space with '_'
+	var name = event.feature.getProperty('name').split(' ').join('_');
+	var coord = event.latLng.toString().split(' ').join('_');
+	
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h3>' + event.feature.getProperty('name') + '</h3>');
+			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
+			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'Modificar</button>' + 
+			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
+			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'Eliminar</button>');
 	// Position of the point
         var anchor = new google.maps.MVCObject();
         anchor.setValues({
