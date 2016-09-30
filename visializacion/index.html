@@ -4,48 +4,96 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-      #info-box {
-        background-color: white;
-        border: 1px solid black;
-        bottom: 30px;
-        height: 20px;
-        padding: 10px;
-        position: absolute;
-        left: 30px;
-      }
-      #legend {
-        font-family: Arial, sans-serif;
-        background: #fff;
-        padding: 10px;
-        margin: 10px;
-        border: 3px solid #000;
-      }
-      #legend h3 {
-        margin-top: 0;
-      }
-      #legend img {
-        vertical-align: middle;
-      }
-    </style>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- JQuery 2.1 -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   </head>
   
   <body>
+    
     <div id="map"></div>
     <div id="legend"><h3>Referencias</h3></div>
     <div id="info-box">?</div>
-    
+
+
+    <!-- Modal Modificar atributos instituciones -->
+    <!-- ======================================= -->
+    <div class="modal fade" id="ModificarModal" tabindex="-1" role="dialog"
+	 aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	      <span aria-hidden="true">&times;</span>
+	    </button>
+            <h4 class="modal-title" id="exampleModalLabel">Modificar</h4>
+	  </div>
+	  <div class="modal-body">
+	    <p id="recipient-coord">Coordinadas</p>
+            <form>
+              <div class="form-group">
+		<label for="recipient-name" class="control-label">Nombre:</label>
+		<input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+		<label for="message-text" class="control-label">Información Adicional:</label>
+		<textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Modificar</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <!-- Modal Eliminar instituciones -->
+    <!-- ============================ -->
+    <div class="modal fade" id="EliminarModal" tabindex="-1" role="dialog"
+	 aria-labelledby="EliminarModalLabel">
+      <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	      <span aria-hidden="true">&times;</span>
+	    </button>
+            <h4 class="modal-title" id="EliminarModalLabel">Eliminar</h4>
+	  </div>
+	  <div class="modal-body">
+	    <p id="recipient-coord">Coordinadas</p>
+	    <p>Eliminar un establecimiento de nuestra lista indica que este no existe más o
+	      no continua funcionando. </p>
+	    <p>La actualización de esta modificación no es inmediata, debido a que tiene que
+	      ser corroborada por un tercero para mayor seguridad</p>
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <!-- All necasary script are put at the end to load faster the web page -->
+    <!-- ================================================================== -->
+    <!-- Personal script to make plot -->
     <script src="js/plot_map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM12MMIbSoDFdhTO0yDpXQcZhYryxeFG4&callback=initMap"
-    async defer></script>
+    <!-- Modal script -->
+    <script src="js/modal.js"></script>
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM12MMIbSoDFdhTO0yDpXQcZhYryxeFG4&callback=initMap" async defer></script>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
