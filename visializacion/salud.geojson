@@ -1,0 +1,1396 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.213899,
+                    -31.412584
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 22"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.223502,
+                    -31.437566
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 23"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.207786,
+                    -31.423653
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 24"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.23226,
+                    -31.414331
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 26"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.156123,
+                    -31.443781
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 27"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.250827,
+                    -31.410704
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 28"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.227518,
+                    -31.3962
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 29"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.206901,
+                    -31.397217
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 30"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.275099,
+                    -31.344154
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 31"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.149892,
+                    -31.412266
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 32"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.259832,
+                    -31.336996
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 33"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.271249,
+                    -31.328686
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 34"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.170319,
+                    -31.44608
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 35"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.140681,
+                    -31.442912
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 37"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.147755,
+                    -31.439399
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 38"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.210653,
+                    -31.445321
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 39"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.202281,
+                    -31.451247
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 40"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.214943,
+                    -31.469594
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 41"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.210454,
+                    -31.484445
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 42"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.195023,
+                    -31.423794
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 43"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.208542,
+                    -31.434592
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 44"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.205096,
+                    -31.463744
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 45"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.22937,
+                    -31.478971
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 46"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.143262,
+                    -31.481113
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 47"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.150432,
+                    -31.375267
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 48"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.248745,
+                    -31.379632
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 49"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.248271,
+                    -31.435947
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 50"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.176746,
+                    -31.313699
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 51"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.241382,
+                    -31.391911
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 52"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.193573,
+                    -31.476363
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 53"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.217419,
+                    -31.344239
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 54"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.240457,
+                    -31.405395
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 55"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.124274,
+                    -31.432174
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 56"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.148977,
+                    -31.364994
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 01"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.099062,
+                    -31.462308
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 02"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.140835,
+                    -31.392223
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 03"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.14312,
+                    -31.382094
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 04"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.130523,
+                    -31.38671
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 05"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.297509,
+                    -31.328234
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 06"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.154844,
+                    -31.400323
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 07"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.129877,
+                    -31.42774
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 08"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.214045,
+                    -31.404858
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 09"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.115241,
+                    -31.424821
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 10"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.164298,
+                    -31.439884
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 11"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.108546,
+                    -31.461254
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 12"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.187019,
+                    -31.372854
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 13"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.163623,
+                    -31.386973
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 14"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.17868,
+                    -31.339332
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 15"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.205005,
+                    -31.375095
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 16"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.175116,
+                    -31.366377
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 17"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.132035,
+                    -31.3742
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 18"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.194711,
+                    -31.375781
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 19"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.209641,
+                    -31.377583
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 20"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.195278,
+                    -31.363655
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 21"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246039,
+                    -31.333794
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 57"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246645,
+                    -31.421133
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 65"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.256249,
+                    -31.320521
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 66"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263531,
+                    -31.314622
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 67"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.147241,
+                    -31.466094
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 68"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263059,
+                    -31.421591
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 76"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.245595,
+                    -31.449049
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 70"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.132983,
+                    -31.452237
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 71"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.105464,
+                    -31.3549
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 74"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.160116,
+                    -31.464194
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 75"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.161218,
+                    -31.358182
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 78"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.198739,
+                    -31.49996
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 79"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.122772,
+                    -31.415523
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 80"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.131531,
+                    -31.414726
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 58"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.111198,
+                    -31.454212
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 81"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.283057,
+                    -31.31565
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 82"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.236788,
+                    -31.43061
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 83"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.248138,
+                    -31.323999
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 61"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.088289,
+                    -31.402747
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 84"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.134929,
+                    -31.367224
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 85"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.21674,
+                    -31.48133
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 86"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.232945,
+                    -31.467755
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 59"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.175563,
+                    -31.412119
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud DEM Centro"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.210078,
+                    -31.407978
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud DEM (O)"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.180834,
+                    -31.379462
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud DEM (N)"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.175563,
+                    -31.412119
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud DAPS"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.136815,
+                    -31.417361
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud Hogar"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.179886,
+                    -31.40666
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud SOM"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.176152,
+                    -31.412997
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud H.Urg"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.180816,
+                    -31.380255
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud H.Infantil"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.060649,
+                    -31.369148
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 69"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.058155,
+                    -31.381583
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 72"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263787,
+                    -31.454629
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 87"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.063697,
+                    -31.409802
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 88"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.271102,
+                    -31.384838
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 77"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246867,
+                    -31.483454
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 73"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.108254,
+                    -31.395187
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 98"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.195073,
+                    -31.512324
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 89"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.082079,
+                    -31.466119
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 90"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.113211,
+                    -31.4393
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 91"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.230987,
+                    -31.332424
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 92"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.250338,
+                    -31.4276
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 93"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.151873,
+                    -31.356012
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 94"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.257417,
+                    -31.414797
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 63"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.147995,
+                    -31.453375
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 95"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.190225,
+                    -31.37184
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 60"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.129192,
+                    -31.442386
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 96"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.234095,
+                    -31.488298
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 97"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.196481,
+                    -31.395302
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 25"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.269734,
+                    -31.31351
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 62"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.165257,
+                    -31.452677
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud 64"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.187222,
+                    -31.411175
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud Med.Prev."
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.21935,
+                    -31.469147
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Centro de Salud H.Prin.Ast"
+            }
+        }
+    ],
+    "type": "FeatureCollection"
+}

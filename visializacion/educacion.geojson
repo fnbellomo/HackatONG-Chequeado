@@ -1,0 +1,967 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "properties": {
+                "name": "Centro Infantil Arco Iris"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.21151,
+                    -31.481543
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Ayuda Mutua"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.181634,
+                    -31.425071
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Bichito De Luz"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.180601,
+                    -31.337708
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Caperucita Roja"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.16684,
+                    -31.386807
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Casita Del Hornero"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.148272,
+                    -31.377366
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Clemente"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.19738,
+                    -31.447853
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Barrilete"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.265597,
+                    -31.322825
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil El Principito"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.182035,
+                    -31.367054
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Frutillas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.229832,
+                    -31.355206
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Hijitus"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.184769,
+                    -31.376365
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Hormiguita Viajera"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.234782,
+                    -31.391959
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Jeromito"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.195136,
+                    -31.421735
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Larguirucho"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.211424,
+                    -31.442288
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Mafalda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.251334,
+                    -31.407856
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Petete"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.213801,
+                    -31.360356
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Portal De Belen"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.131954,
+                    -31.414879
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Rayito De Sol"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.232822,
+                    -31.422764
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Trapito"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.207668,
+                    -31.471861
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Los 7 Cabritos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.196373,
+                    -31.419037
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Primo Garcia Elorrio"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.245308,
+                    -31.428394
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Julia Saury"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.099826,
+                    -31.46207
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Dr. Miguel Oliver"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.08463,
+                    -31.464274
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Dr.Juan Felix Caferata"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.171975,
+                    -31.401001
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Casihuahuitas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.142807,
+                    -31.463064
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Ignacio Palacios Hidalgo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.10379,
+                    -31.460374
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Trinidad Moreno"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.145502,
+                    -31.433818
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Padre Antonio Martinez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.08949,
+                    -31.464998
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Ignacio Garzon"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.182695,
+                    -31.430408
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Dr. Luis Lezama"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.24784,
+                    -31.448057
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Colorin Colorado"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.271461,
+                    -31.328803
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Ruiditos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.140318,
+                    -31.372028
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Sue\u00f1os De Colores"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.154696,
+                    -31.401229
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Ternuritas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.138961,
+                    -31.448311
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Capullitos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.269441,
+                    -31.316764
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Travesuras"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.283424,
+                    -31.315947
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Centro Infantil Garabatos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246142,
+                    -31.33398
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Yamahiria A Libia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.234952,
+                    -31.48865
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Pedro Carande Carro"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.170602,
+                    -31.371072
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Angel Gastaldi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.115849,
+                    -31.423984
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Julio Gonzalez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.060989,
+                    -31.368509
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Azor Grimaut"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.215707,
+                    -31.485004
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Gob Jose A Ceballos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.081958,
+                    -31.465316
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Arturo U Illia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.139093,
+                    -31.447914
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Gob Amadeo Sabattini"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.133364,
+                    -31.456595
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Gob Brig J S Martin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.156012,
+                    -31.444841
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Carlos Becerra"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.23212,
+                    -31.421362
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Escr Oscar S Lopez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.09823,
+                    -31.462114
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Gob Justo P Molina"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.243751,
+                    -31.401404
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Ing Juan Masjoan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.220182,
+                    -31.339711
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Donato L Frias"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.135315,
+                    -31.367622
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Ernesto M Romero"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.162672,
+                    -31.449854
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Raul V Martinez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.268463,
+                    -31.340595
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr S H Del Castillo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.2224,
+                    -31.439471
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Cooper Argentino"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.121539,
+                    -31.418758
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Arsenio Murugarren"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.229274,
+                    -31.357506
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Carlos F Ordo\u00f1ez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.229421,
+                    -31.479194
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Cesar E Romero"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263649,
+                    -31.454568
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Mutualismo Argentino"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.194091,
+                    -31.37594
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Antonio Sobral"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.13205,
+                    -31.404081
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Luz Vieira Mendez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.24647,
+                    -31.424654
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Escr A Paredes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.150599,
+                    -31.363003
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Raul Fernandez"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.284184,
+                    -31.314072
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Horacio Garcia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.266668,
+                    -31.316508
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Jorge Orgaz"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.293607,
+                    -31.319574
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Emilio B Lazcano"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.240472,
+                    -31.392052
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Juan B Justo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.23113,
+                    -31.392398
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Saul Taborda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.273556,
+                    -31.328932
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Republica De Italia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.23346,
+                    -31.467399
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Jorge Luis Borges"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.131824,
+                    -31.373638
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Gob A Zanichelli"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.156238,
+                    -31.35718
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Mtro Manuel Oliva"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.258361,
+                    -31.318858
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dra Alicia Moreau"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.216023,
+                    -31.470484
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Dr Alfredo Orgaz"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.134248,
+                    -31.372428
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "name": "Escuela Domingo F Sarmiento"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.128646,
+                    -31.457387
+                ]
+            },
+            "type": "Feature"
+        }
+    ]
+}
