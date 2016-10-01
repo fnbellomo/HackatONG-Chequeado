@@ -11,15 +11,20 @@ $('#ModificarModal').on('show.bs.modal', function (event) {
     // Extract name
     var name = button.data('name');
     name = name.split('_').join(' ');
-
     // Extract coordinate
-    var coord = button.data('coord');
-    coord = coord.split('_').join(' ');
+    var lat = button.data('lat');
+    var lng = button.data('lng');
+    // Extract type of element
+    var elemento = button.data('element');
     
     var modal = $(this)
     modal.find('.modal-title').text('Modificar  ' + name)
     modal.find('.modal-body input').val(name)
-    modal.find('#recipient-coord').text('Coordinadas ' + coord)
+    modal.find('#recipient-coord').text('Coordinadas ' + lat + ' ' + lng)
+
+    // onclick event in button
+    var summitFunc = 'summitModificar("' + elemento + '",' + lat + ',' + lng + ')';
+    document.getElementById('buttonModificar').setAttribute('onclick', summitFunc)
 })
 
 
@@ -32,10 +37,37 @@ $('#EliminarModal').on('show.bs.modal', function (event) {
     var name = button.data('name');
     name = name.split('_').join(' ');
     // Extract coordinate
-    var coord = button.data('coord');
-    coord = coord.split('_').join(' ');
+    var lat = button.data('lat');
+    var lng = button.data('lng');
+    // Extract type of element
+    var elemento = button.data('element');
 
     var modal = $(this)
     modal.find('.modal-title').text('Eliminar ' + name)
-    modal.find('#recipient-coord').text('Coordinadas ' + coord)
+    modal.find('#recipient-coord').text('Coordinadas ' + + lat + ' ' + lng)
+
+    // onclick event in button
+    var summitFunc = 'summitEliminar("' + elemento + '",' + lat + ',' + lng + ')';
+    document.getElementById('buttonEliminar').setAttribute('onclick', summitFunc)
 })
+
+
+function summitModificar(elemento, lat, lng) {
+    var requestJson = {"elemento": elemento,
+		       "nombre": document.getElementById("recipient-name").value,
+		       "lat": lat,
+		       "lng": lng};
+    console.log(requestJson);
+
+    $('#ModificarModal').modal('hide');
+}
+
+
+function summitEliminar(elemento, lat, lng) {
+    var requestJson = {"elemento": elemento,
+		       "lat": lat,
+		       "lng": lng};
+    console.log(requestJson);
+
+    $('#EliminarModal').modal('hide');
+}
