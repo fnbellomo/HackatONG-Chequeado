@@ -85,10 +85,10 @@ function initMap() {
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      'Densidad: ' + event.feature.getProperty('densidad') + '<br/>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="cortaderos">' +
 			      'Modificar</button>' + 
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="cortaderos">' +
 			      'Eliminar</button>');
 
 	// Position of the point
@@ -112,10 +112,10 @@ function initMap() {
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="salud">' +
 			      'Modificar</button>' + 
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng +'>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="salud">' +
 			      'Eliminar</button>');
 	// Position of the point
         var anchor = new google.maps.MVCObject();
@@ -138,10 +138,10 @@ function initMap() {
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="educacion">' +
 			      'Modificar</button>' + 
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="educacion">' +
 			      'Eliminar</button>');
 	// Position of the point
         var anchor = new google.maps.MVCObject();
