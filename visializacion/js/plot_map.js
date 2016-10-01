@@ -77,17 +77,18 @@ function initMap() {
 	// I cant pass data with space to the modal.
 	// Replace the space with '_'
 	var name = event.feature.getProperty('name').split(' ').join('_');
-	var coord = event.latLng.toString().split(' ').join('_');
+	var lat = event.latLng.lat();
+	var lng = event.latLng.lng();
 
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      'Densidad: ' + event.feature.getProperty('densidad') + '<br/>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
-			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
 			      'Modificar</button>' + 
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
 			      'Eliminar</button>');
 
 	// Position of the point
@@ -104,16 +105,17 @@ function initMap() {
 	// I cant pass data with space to the modal.
 	// Replace the space with '_'
 	var name = event.feature.getProperty('name').split(' ').join('_');
-	var coord = event.latLng.toString().split(' ').join('_');
+	var lat = event.latLng.lat();
+	var lng = event.latLng.lng();
 
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
-			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
 			      'Modificar</button>' + 
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng +'>' +
 			      'Eliminar</button>');
 	// Position of the point
         var anchor = new google.maps.MVCObject();
@@ -129,16 +131,17 @@ function initMap() {
 	// I cant pass data with space to the modal.
 	// Replace the space with '_'
 	var name = event.feature.getProperty('name').split(' ').join('_');
-	var coord = event.latLng.toString().split(' ').join('_');
+	var lat = event.latLng.lat();
+	var lng = event.latLng.lng();
 	
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
-			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
 			      'Modificar</button>' + 
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-name=' + name + ' data-coord=' + coord + '>' +
+			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + '>' +
 			      'Eliminar</button>');
 	// Position of the point
         var anchor = new google.maps.MVCObject();
