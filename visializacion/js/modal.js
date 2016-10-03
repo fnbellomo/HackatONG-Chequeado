@@ -1,10 +1,11 @@
 /*
-  Simple script para mostrar los valos correctos en el modal
-  pasando los valores mediante data-name y data-coord
+  Simple script para mostrar los valos correctos en los distintos 
+  modales (ventanas emergentes) pasando los valores mediante 
+  data-atributeName
 */
 
 // Modal para modificar atributos
-$('#ModificarModal').on('show.bs.modal', function (event) {
+$('#modifyWindow').on('show.bs.modal', function (event) {
     // Button that triggered the modal
     var button = $(event.relatedTarget)
 
@@ -20,16 +21,15 @@ $('#ModificarModal').on('show.bs.modal', function (event) {
     var modal = $(this)
     modal.find('.modal-title').text('Modificar  ' + name)
     modal.find('.modal-body input').val(name)
-    modal.find('#recipient-coord').text('Coordinadas ' + lat + ' ' + lng)
+    modal.find('#showCoord').text('Coordinadas ' + lat + ' ' + lng)
 
     // onclick event in button
-    var summitFunc = 'summitModificar("' + elemento + '",' + lat + ',' + lng + ')';
-    document.getElementById('buttonModificar').setAttribute('onclick', summitFunc)
+    var request = 'modifyRequest("' + elemento + '",' + lat + ',' + lng + ')';
+    document.getElementById('modifyButton').setAttribute('onclick', request)
 })
 
-
 // Modal para eliminar instituciones
-$('#EliminarModal').on('show.bs.modal', function (event) {
+$('#deletWindow').on('show.bs.modal', function (event) {
     // Button that triggered the modal
     var button = $(event.relatedTarget)
 
@@ -44,30 +44,65 @@ $('#EliminarModal').on('show.bs.modal', function (event) {
 
     var modal = $(this)
     modal.find('.modal-title').text('Eliminar ' + name)
-    modal.find('#recipient-coord').text('Coordinadas ' + + lat + ' ' + lng)
+    modal.find('#showCoord').text('Coordinadas ' + + lat + ' ' + lng)
 
     // onclick event in button
-    var summitFunc = 'summitEliminar("' + elemento + '",' + lat + ',' + lng + ')';
-    document.getElementById('buttonEliminar').setAttribute('onclick', summitFunc)
+    var request = 'deletRequest("' + elemento + '",' + lat + ',' + lng + ')';
+    document.getElementById('deletButton').setAttribute('onclick', request)
 })
 
 
-function summitModificar(elemento, lat, lng) {
+// Modal agregar una nueva institucion
+$('#createWindow').on('show.bs.modal', function (event) {
+    // Button that triggered the modal
+    var button = $(event.relatedTarget)
+
+    // Extract coordinate
+    var lat = button.data('lat');
+    var lng = button.data('lng');
+
+    var modal = $(this)
+    modal.find('#showCoord').text('Coordinadas ' + + lat + ' ' + lng)
+
+    // onclick event in button
+    var request = 'createRequest(' + lat + ',' + lng + ')';
+    document.getElementById('createButton').setAttribute('onclick', request)
+})
+
+// Request para modificar una institucion
+function modifyRequest(elemento, lat, lng) {
     var requestJson = {"elemento": elemento,
-		       "nombre": document.getElementById("recipient-name").value,
+		       "nombre": document.getElementById("formName").value,
 		       "lat": lat,
 		       "lng": lng};
     console.log(requestJson);
 
-    $('#ModificarModal').modal('hide');
+    // Hide modal and close infoWindow
+    $('#modifyWindow').modal('hide');
+    closeInfoWindow();
 }
 
-
-function summitEliminar(elemento, lat, lng) {
+// Request para borrar una institucion
+function deletRequest(elemento, lat, lng) {
     var requestJson = {"elemento": elemento,
 		       "lat": lat,
 		       "lng": lng};
     console.log(requestJson);
 
-    $('#EliminarModal').modal('hide');
+    // Hide modal and close infoWindow
+    $('#deletWindow').modal('hide');
+    closeInfoWindow();
+}
+
+// Request para crear una institucion
+function createRequest(lat, lng) {
+    var requestJson = {"elemento": document.getElementById("formType").value,
+		       "nombre": document.getElementById("formName").value,
+		       "lat": lat,
+		       "lng": lng};
+    console.log(requestJson);
+
+    // Hide modal and close infoWindow
+    $('#createWindow').modal('hide');
+    closeInfoWindow();
 }

@@ -7,18 +7,25 @@
 // General map variable
 var map;
 
-// This 3 variable that will take 3 diffetents layers
+// Name of the 3 differents layers
 var cortaderosLayer;
 var healthLayer;
 var educationLayer;
-
-// New markers array
-var markersNews = [];
 
 // Variables used to show or hide the different layers
 var showCortaderosLayer = true;
 var showHealtLayer = true;
 var showEducationLayer = true;
+
+// Variables used with the new markers
+var markers = {};
+var currentId = 0;
+var uniqueId = function() {
+    return ++currentId;
+}
+
+// infoWindow variable
+var infoWindow;
 
 
 function initMap() {
@@ -28,11 +35,13 @@ function initMap() {
 	center: {lat: -31.45, lng: -64.18}
     });
 
+    
     // Initialize all the layers
     cortaderosLayer = new google.maps.Data();
     healthLayer     = new google.maps.Data();
     educationLayer  = new google.maps.Data();
 
+    
     // Load GeoJSON with the data of each layer
     cortaderosLayer.loadGeoJson(
 	'cortaderos.geojson');
@@ -72,7 +81,8 @@ function initMap() {
         var name = type.name;
         var icon = type.icon;
         var div = document.createElement('div');
-        div.innerHTML = '<img src="' + icon + '"> ' + '<button onclick="showHideMarkers(' + "'" + name + "'" + ');">' + name + '</button>';
+	div.className = "legend-item";
+        div.innerHTML = '<img src="' + icon + '"> ' + '<p onclick="showHideLayers(' + "'" + name + "'" + ');">' + name + '</p>';
         legend.appendChild(div);
     }
     // Push the legend
@@ -80,9 +90,9 @@ function initMap() {
 
     
     // Create a global infowindow
-    var infoWindow = new google.maps.InfoWindow({
+    infoWindow = new google.maps.InfoWindow({
         content: "",
-        pixelOffset: new google.maps.Size(0, 0)
+        pixelOffset: new google.maps.Size(0, -30)
     });
 
 
@@ -100,10 +110,10 @@ function initMap() {
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
 			      'Densidad demográfica: ' + event.feature.getProperty('densidad') + '<br/>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
 			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="cortaderos">' +
 			      'Modificar</button>' + 
-			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
+			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
 			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="cortaderos">' +
 			      'Eliminar</button>' + '</div>');
 
@@ -127,10 +137,10 @@ function initMap() {
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
 			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="salud">' +
 			      'Modificar</button> ' + 
-			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
+			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
 			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="salud">' +
 			      'Eliminar</button>' + '</div>');
 	// Position of the point
@@ -153,10 +163,10 @@ function initMap() {
 	// Text to show
         infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModificarModal" ' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
 			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="educacion">' +
 			      'Modificar</button>' + 
-			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
+			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
 			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="educacion">' +
 			      'Eliminar</button>'  + '</div>');
 	// Position of the point
@@ -183,7 +193,7 @@ function initMap() {
     
 
     map.addListener('click', function(event) {
-        placeMarkerAndPanTo(event, map);
+        createMarker(event);
 
 	// Coordinate of the new points
 	var lat = event.latLng.lat();
@@ -193,18 +203,17 @@ function initMap() {
 	// Text to show
 	infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			      '<h4>Nuevo Punto</h4>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#AgregarModal" ' +
+			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createWindow" ' +
 			      'data-lat=' + lat + ' data-lng=' + lng + '> ' +
 			      ' Modificar</button>' +
 			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
-			      'data-lat=' + lat + ' data-lng=' + lng + ' onclick="delFun()"' + '> ' +
-			      //'data-lat=' + lat + ' data-lng=' + lng + '> ' +
+			      'data-lat=' + lat + ' data-lng=' + lng + ' onclick="deleteMarker(' + currentId +')"' + '> ' +
 			      ' Eliminar</button>' + '</div>');
 	// Position of the point
 	var anchor = new google.maps.MVCObject();
 	anchor.setValues({
             position: event.latLng,
-            anchorPoint: new google.maps.Point(0, 0) // Ofset del text-box a las coordenadas
+            anchorPoint: new google.maps.Point(0, -30) // Ofset del text-box a las coordenadas
 	});
 	infoWindow.open(map, anchor);
     });
@@ -212,25 +221,42 @@ function initMap() {
 };
 
 
-function placeMarkerAndPanTo(event, map) {
-    // New marker
-    var marker = new google.maps.Marker({
+
+
+var createMarker = function(event) {
+    // Create a new marker and display in the map
+    
+    var id = uniqueId(); // get new id
+    var marker = new google.maps.Marker({ // create a marker and set id
+        id: id,
         position: event.latLng,
-        map: map
+        map: map,
+        draggable: true,
+	animation: google.maps.Animation.DROP
     });
-    markersNews.push(marker);
+    // Cache created marker to markers object with id as its key
+    markers[id] = marker;
+
+    // Center the map in the new point
     map.panTo(event.latLng);
 }
 
-
-function delFun() {
-    console.log('Spam');
+var deleteMarker = function(id) {
+    // Removes a marker that created the user
+    
+    var marker = markers[id]; // find the marker by given id
+    marker.setMap(null);
+    infoWindow.close();
 }
 
+var closeInfoWindow = function(){
+    // dummy function to close infoWindow from other function
+    infoWindow.close();
+}
 
-
-// Show hide the differents layers
-function showHideMarkers(element) {
+function showHideLayers(element) {
+    // Show hide the differents layers
+    
     if (element == 'Cortaderos') {
 	showCortaderosLayer = !showCortaderosLayer
 	if (showCortaderosLayer) {
