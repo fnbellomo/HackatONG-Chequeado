@@ -11,6 +11,7 @@ var map;
 var cortaderosLayer;
 var healthLayer;
 var educationLayer;
+var newElementLayer
 
 // Variables used to show or hide the different layers
 var showCortaderosLayer = true;
@@ -34,14 +35,13 @@ function initMap() {
 	zoom: 12,
 	center: {lat: -31.45, lng: -64.18}
     });
-
     
     // Initialize all the layers
     cortaderosLayer = new google.maps.Data();
     healthLayer     = new google.maps.Data();
     educationLayer  = new google.maps.Data();
+    newElementLayer = new google.maps.Data();
 
-    
     // Load GeoJSON with the data of each layer
     cortaderosLayer.loadGeoJson(
 	'cortaderos.geojson');
@@ -189,7 +189,6 @@ function initMap() {
     cortaderosLayer.setMap(map);
     healthLayer.setMap(map);
     educationLayer.setMap(map);
-
     
 
     map.addListener('click', function(event) {
@@ -202,7 +201,7 @@ function initMap() {
 	// InfoWindow
 	// Text to show
 	infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h4>Nuevo Punto</h4>' +
+			      '<h4>Nuevo Punto ' + currentId + '</h4>' +
 			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createWindow" ' +
 			      'data-lat=' + lat + ' data-lng=' + lng + '> ' +
 			      ' Modificar</button>' +
@@ -213,8 +212,9 @@ function initMap() {
 	var anchor = new google.maps.MVCObject();
 	anchor.setValues({
             position: event.latLng,
-            anchorPoint: new google.maps.Point(0, -30) // Ofset del text-box a las coordenadas
+            anchorPoint: new google.maps.Point(0, 0) // Ofset del text-box a las coordenadas
 	});
+	
 	infoWindow.open(map, anchor);
     });
 
@@ -225,21 +225,23 @@ function initMap() {
 
 var createMarker = function(event) {
     // Create a new marker and display in the map
-    
     var id = uniqueId(); // get new id
     var marker = new google.maps.Marker({ // create a marker and set id
         id: id,
         position: event.latLng,
         map: map,
-        draggable: true,
-	animation: google.maps.Animation.DROP
-    });
+        draggable: false,
+	animation: google.maps.Animation.DROP,
+    });    
+    
     // Cache created marker to markers object with id as its key
     markers[id] = marker;
 
     // Center the map in the new point
     map.panTo(event.latLng);
 }
+
+
 
 var deleteMarker = function(id) {
     // Removes a marker that created the user
