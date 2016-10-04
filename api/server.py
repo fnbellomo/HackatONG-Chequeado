@@ -8,91 +8,244 @@ import json
 from math import sqrt
 from datetime import datetime
 
-from flask import Flask
+from flask import Flask, jsonify, make_response, request, abort
 
 from utils import read4json, save2json
-
-# path a los datos
-cortaderos_path = "../datos/cortaderos.json"
-dispensarios_path = "../datos/dispensarios.json"
-escuelas_path = "../datos/escuelas.json"
 
 
 # creacion del server
 app = Flask(__name__)
 
 
-@app.route("/api/data", methods=['GET'])
-def all():
+@app.route("/api/v1.0/datos/<elemento>/", methods=['GET'])
+def get_datos(elemento):
     """
-    Retorna en un JSON, la información sobre los cortaderos,
-    escuelas y dispensario.
+    Retorna un GeoJSON con los datos de alguno de los
+    elementos posibles (cortaderos, salud o educacion).
+
+    Parameter
+    ---------
+    elemento: str
+      Elemento a obtener. Puede ser cortaderos, salud, educacion
 
     Return
     ------
-    data: json
-
-    Example
-    -------
-
-    { "Cortadores": [
-       {
-        "coordenada": [12, 3],
-        "densidad": 3,
-        "acceso_agua": "string",
-        "acceso_gas": "string"
-       },
-       ...
-    ],
-      "Dispensarios" : [
-       {
-        "coordenadas": [21, 6],
-        "nombre": "string"
-       },
-       ...
-    ],
-      "Escuelas": [
-       {
-        "coordenadas": [36, 7],
-        "nombre": "string",
-        "cod_emp": "string"
-       },
-       ...
-    ]}
+    data: geojson
+      GeoJSON con los datos sobre el elemento.
     """
-    cortadero = read4json(cortaderos_path)
-    dispensarios = read4json(dispensarios_path)
-    esculas = read4json(escuelas_path)
+    elementos_posibles = ['cortaderos', 'salud', 'educacion']
+    elemento = elemento.lower()
 
-    data = {'cortaderos': cortadero['Cortadores'],
-            'dispensarios': dispensarios['Dispensarios'],
-            'escuelas': esculas['Escuelas']}
-    data = json.dumps(data)
+    if elemento not in elementos_posibles:
+        abort(404)
 
-    return data
+    path = "../datos/{0}.geojson".format(elemento)
+    data = read4json(path)
+
+    return jsonify(data)
 
 
-@app.route("/api/coordinate/<latitude>/<longitude>/<radio>")
-def coordinate(latitude, longitude, radio):
+@app.route("/api/v1.0/datos/modificar/", methods=['POST'])
+def nuevo_elemento():
+    """
+    Crear un nuevo elemento.
+
+    Request
+    -------
+    elemento: str
+      Tipo de elemento: cortaderos, salud o educacion.
+    lat: float
+      Latidud del nuevo elemento.
+    lng: float
+      Longitud del nuevo elemento.
+    nombre: str
+      Nombre del elemento.
+
+    TODO
+    ----
+    * Chequear que los typos de los elementos del request
+      sean correctos.
+    """
+    elementos_posibles = ['cortaderos', 'salud', 'educacion']
+
+    if not request.json:
+        abort(400)
+    if 'elemento' not in request.json:
+        abort(400)
+
+    elemento = request.json['elemento']
+    elemento = elemento.lower()
+    if elemento not in elementos_posibles:
+        abort(400)
+    if 'lat' not in request.json:
+        abort(400)
+    if 'lng' not in request.json:
+        abort(400)
+    if 'nombre' not in request.json:
+        abort(400)
+
+    # Leo todos los elementos tentativos
+    # y realizo un append sobre estos
+    data_path = "../datos/tentativos/{0}.json".format(elemento)
+    data = read4json(data_path)[elemento]
+
+    # nuevo dato
+    value = {'coordinadas': [float(request.json['lat']),
+                             float(request.json['lng'])],
+             'nombre': request.json['nombre'],
+             'fecha': str(datetime.now()),
+             'ip': request.remote_addr}
+    data.append(value)
+
+    data = {elemento: data}
+    save2json(data_path, data)
+
+    return jsonify({'status': 201})
+
+
+@app.route("/api/v1.0/datos/modificar/", methods=['DELET'])
+def borrar_elemento():
+    """
+    Borra un elemento existente
+
+    Request
+    -------
+    elemento: str
+      Tipo de elemento: cortaderos, salud o educacion.
+    lat: float
+      Latidud del nuevo elemento.
+    lng: float
+      Longitud del nuevo elemento.
+
+    TODO
+    ----
+    * Chequear que los typos de los elementos del request
+      sean correctos.
+    """
+    elementos_posibles = ['cortaderos', 'salud', 'educacion']
+
+    if not request.json:
+        abort(400)
+    if 'elemento' not in request.json:
+        abort(400)
+
+    elemento = request.json['elemento']
+    elemento = elemento.lower()
+    if elemento not in elementos_posibles:
+        abort(400)
+    if 'lat' not in request.json:
+        abort(400)
+    if 'lng' not in request.json:
+        abort(400)
+
+    # Leo todos los elementos tentativos
+    # y realizo un append sobre estos
+    data_path = "../datos/tentativos/{0}_borrar.json".format(elemento)
+    data = read4json(data_path)[elemento]
+
+    # nuevo dato
+    value = {'coordinadas': [float(request.json['lat']),
+                             float(request.json['lng'])],
+             'fecha': str(datetime.now()),
+             'ip': request.remote_addr}
+    data.append(value)
+
+    data = {elemento: data}
+    save2json(data_path, data)
+
+    return jsonify({'status': 201})
+
+
+@app.route("/api/v1.0/datos/modificar/", methods=['PUT'])
+def actualizar_elemento():
+    """
+    Actualizar un elemento.
+
+    Request
+    -------
+    elemento: str
+      Tipo de elemento: cortaderos, salud o educacion.
+    lat: float
+      Latidud del nuevo elemento.
+    lng: float
+      Longitud del nuevo elemento.
+    nombre: str
+      Nombre del elemento.
+
+    TODO
+    ----
+    * Chequear que los typos de los elementos del request
+      sean correctos.
+    """
+    elementos_posibles = ['cortaderos', 'salud', 'educacion']
+
+    if not request.json:
+        abort(400)
+    if 'elemento' not in request.json:
+        abort(400)
+
+    elemento = request.json['elemento']
+    elemento = elemento.lower()
+    if elemento not in elementos_posibles:
+        abort(400)
+    if 'lat' not in request.json:
+        abort(400)
+    if 'lng' not in request.json:
+        abort(400)
+    if 'nombre' not in request.json:
+        abort(400)
+
+    # Leo todos los elementos tentativos
+    # y realizo un append sobre estos
+    data_path = "../datos/tentativos/{0}.json".format(elemento)
+    data = read4json(data_path)[elemento]
+
+    # nuevo dato
+    value = {'coordinadas': [float(request.json['lat']),
+                             float(request.json['lng'])],
+             'nombre': request.json['nombre'],
+             'fecha': str(datetime.now()),
+             'ip': request.remote_addr}
+    data.append(value)
+
+    data = {elemento: data}
+    save2json(data_path, data)
+
+    return jsonify({'status': 201})
+
+
+
+
+@app.route("/api/coordinate/")
+def coordinate():
     """
     Retorna todos los datos dentro de un radio
 
-    Parameters
-    ----------
-    latitude: float
+    Request
+    -------
+    lat: float
       Latidud del centro de la circunferencia
-    longitude: float
+    lng: float
       Longitud del centro de la circunferencia
     radio: float
       Radio de la circunferencia
     """
-    latitude = float(latitude)
-    longitude = float(longitude)
-    radio = float(radio)
+    if not request.json:
+        abort(400)
+    if 'lat' not in request.json:
+        abort(400)
+    if 'lng' not in request.json:
+        abort(400)
+    if 'radio' not in request.json:
+        abort(400)
 
-    cortadero = read4json(cortaderos_path)
-    dispensarios = read4json(dispensarios_path)
-    esculas = read4json(escuelas_path)
+    latitude = request.json['lat']
+    longitude = request.json['lng']
+    radio = request.json['radio']
+
+    cortadero = read4json('../datos/cortaderos.geojson')
+    dispensarios = read4json('../datos/salud.geojson')
+    esculas = read4json('../datos/educacion.geojson')
 
     # Datos para los cortadores
     corta_counts = []
@@ -143,45 +296,32 @@ def coordinate(latitude, longitude, radio):
     return json.dumps(data)
 
 
-@app.route("/api/nuevo/<elemento>/<latitude>/<longitude>")
-def nuevo_elemento(elemento, latitude, longitude):
+# Http Errors
+@app.errorhandler(400)
+def bad_request(error):
     """
-    Agrega las coordenadas un nuevo elemento
-    (cortadero, escuela o dispensario)
-
-    Parameters
-    ----------
-    elemento: str
-      Tipo de elemento: cortadero, escuela o dispensario.
-    latitude: float
-      Latidud del nuevo elemento.
-    longitude: float
-      Longitud del nuevo elemento.
-
-    TODO
-    ----
-    * En el caso de que el elemento ingresado no sea un elemento valido,
-      retornar un error http correcto.
-    * En el casode que sea un elemnto valido, retornar el valido de http.
+    Error 400 for Bad Request.
+    The body request is empy or with a bad key
+    For example `new_name` in side of `name`.
     """
-    elementos_posibles = ['cortadero', 'escuela', 'dispensario']
-    elemento = elemento.lower()
+    return make_response(jsonify({'error': 'Bad request'}), 400)
 
-    if elemento not in elementos_posibles:
-        return 'Error de elemento'
 
-    data_path = "../datos/tentativos/{0}_nuevo.json".format(elemento)
-    data = read4json(data_path)[elemento]
+@app.errorhandler(401)
+def unauthorized(error):
+    """
+    Error 401 for Unauthorized.
+    """
+    return make_response(jsonify({'error': 'Unauthorized'}), 401)
 
-    # nuevo dato
-    value = {'coordinate': [float(latitude), float(longitude)],
-             'date': str(datetime.now())}
-    data.append(value)
 
-    data = {elemento: data}
-    save2json(data_path, data)
-
-    return "ok"
+@app.errorhandler(404)
+def not_found(error):
+    """
+    Error 404 for Resource Not Found.
+    The id in the URI don't exist.
+    """
+    return make_response(jsonify({'error': 'Not found'}), 404)
 
 
 if __name__ == "__main__":
