@@ -179,7 +179,7 @@ function markerInfoWindow(id) {
     infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
 			  '<h4>Nuevo Punto ' + id + '</h4>' +
 			  '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createWindow" ' +
-			  'data-lat=' + lat + ' data-lng=' + lng + '> ' +
+			  'data-lat=' + lat + ' data-lng=' + lng + ' data-id='+ id + '> ' +
 			  ' Modificar</button>' +
 			  '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#EliminarModal" ' +
 			  'data-lat=' + lat + ' data-lng=' + lng + ' onclick="deleteMarker(' + id +')"' + '> ' +
@@ -210,7 +210,7 @@ var createMarker = function(event) {
         id: id,
         position: event.latLng,
         map: map,
-        draggable: false,
+        draggable: true,
 	animation: google.maps.Animation.DROP,
     });    
     
@@ -230,6 +230,11 @@ var deleteMarker = function(id) {
     var marker = markers[id]; // find the marker by given id
     marker.setMap(null);
     infoWindow.close();
+}
+
+var fixMarker = function(id) {
+    var marker = markers[id];
+    marker.draggable = false;
 }
 
 //

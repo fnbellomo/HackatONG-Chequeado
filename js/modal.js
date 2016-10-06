@@ -60,12 +60,13 @@ $('#createWindow').on('show.bs.modal', function (event) {
     // Extract coordinate
     var lat = button.data('lat');
     var lng = button.data('lng');
+    var id  = button.data('id');
 
     var modal = $(this)
     modal.find('#showCoord').text('Coordinadas ' + + lat + ' ' + lng)
 
     // onclick event in button
-    var request = 'createRequest(' + lat + ',' + lng + ')';
+    var request = 'createRequest(' + lat + ',' + lng + ',' + id + ')';
     document.getElementById('createButton').setAttribute('onclick', request)
 })
 
@@ -95,13 +96,16 @@ function deletRequest(elemento, lat, lng) {
 }
 
 // Request para crear una institucion
-function createRequest(lat, lng) {
+function createRequest(lat, lng, id) {
     var requestJson = {"elemento": document.getElementById("formType").value,
-		       "nombre": document.getElementById("formName").value,
+		       "nombre": document.getElementById("formNameCreate").value,
 		       "lat": lat,
 		       "lng": lng};
     console.log(requestJson);
 
+    // Fix the position of the marker
+    fixMarker(id);
+    
     // Hide modal and close infoWindow
     $('#createWindow').modal('hide');
     closeInfoWindow();
