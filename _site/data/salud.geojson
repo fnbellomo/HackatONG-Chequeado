@@ -1,508 +1,1502 @@
 {
     "features": [
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Arco Iris"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.21151,
-                    -31.481543
+                    -64.213899,
+                    -31.412584
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 22",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Ayuda Mutua"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.181634,
-                    -31.425071
+                    -64.223502,
+                    -31.437566
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 23",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Bichito De Luz"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.180601,
-                    -31.337708
+                    -64.207786,
+                    -31.423653
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 24",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Caperucita Roja"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.16684,
-                    -31.386807
+                    -64.23226,
+                    -31.414331
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 26",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Casita Del Hornero"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.148272,
-                    -31.377366
+                    -64.156123,
+                    -31.443781
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 27",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Clemente"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.19738,
-                    -31.447853
+                    -64.250827,
+                    -31.410704
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 28",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Barrilete"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.265597,
-                    -31.322825
+                    -64.227518,
+                    -31.3962
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 29",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil El Principito"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.182035,
-                    -31.367054
+                    -64.206901,
+                    -31.397217
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 30",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Frutillas"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.229832,
-                    -31.355206
+                    -64.275099,
+                    -31.344154
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 31",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Hijitus"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.184769,
-                    -31.376365
+                    -64.149892,
+                    -31.412266
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 32",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Hormiguita Viajera"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.234782,
-                    -31.391959
+                    -64.259832,
+                    -31.336996
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 33",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Jeromito"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.195136,
-                    -31.421735
+                    -64.271249,
+                    -31.328686
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 34",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Larguirucho"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.211424,
-                    -31.442288
+                    -64.170319,
+                    -31.44608
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 35",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Mafalda"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.251334,
-                    -31.407856
+                    -64.140681,
+                    -31.442912
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 37",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Petete"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.213801,
-                    -31.360356
+                    -64.147755,
+                    -31.439399
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 38",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Portal De Belen"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.131954,
-                    -31.414879
+                    -64.210653,
+                    -31.445321
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 39",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Rayito De Sol"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.232822,
-                    -31.422764
+                    -64.202281,
+                    -31.451247
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 40",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Trapito"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.207668,
-                    -31.471861
+                    -64.214943,
+                    -31.469594
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 41",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Los 7 Cabritos"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.196373,
-                    -31.419037
+                    -64.210454,
+                    -31.484445
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 42",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Primo Garcia Elorrio"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.245308,
-                    -31.428394
+                    -64.195023,
+                    -31.423794
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 43",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Julia Saury"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.099826,
-                    -31.46207
+                    -64.208542,
+                    -31.434592
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 44",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Dr. Miguel Oliver"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.08463,
-                    -31.464274
+                    -64.205096,
+                    -31.463744
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 45",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Dr.Juan Felix Caferata"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.171975,
-                    -31.401001
+                    -64.22937,
+                    -31.478971
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 46",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Casihuahuitas"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.142807,
-                    -31.463064
+                    -64.143262,
+                    -31.481113
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 47",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Ignacio Palacios Hidalgo"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.10379,
-                    -31.460374
+                    -64.150432,
+                    -31.375267
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 48",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Trinidad Moreno"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.145502,
-                    -31.433818
+                    -64.248745,
+                    -31.379632
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 49",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Padre Antonio Martinez"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.08949,
-                    -31.464998
+                    -64.248271,
+                    -31.435947
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 50",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Ignacio Garzon"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.182695,
-                    -31.430408
+                    -64.176746,
+                    -31.313699
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 51",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Dr. Luis Lezama"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.24784,
-                    -31.448057
+                    -64.241382,
+                    -31.391911
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 52",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Colorin Colorado"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.271461,
-                    -31.328803
+                    -64.193573,
+                    -31.476363
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 53",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Ruiditos"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.140318,
-                    -31.372028
+                    -64.217419,
+                    -31.344239
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 54",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Sue\u00f1os De Colores"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.154696,
-                    -31.401229
+                    -64.240457,
+                    -31.405395
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 55",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Ternuritas"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.138961,
-                    -31.448311
+                    -64.124274,
+                    -31.432174
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 56",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Capullitos"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.269441,
-                    -31.316764
+                    -64.148977,
+                    -31.364994
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 01",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Travesuras"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.283424,
-                    -31.315947
+                    -64.099062,
+                    -31.462308
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 02",
+                "type": "salud"
+            },
+            "type": "Feature"
         },
         {
-            "properties": {
-                "type": "educacion",
-                "name": "Centro Infantil Garabatos"
-            },
-            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -64.246142,
-                    -31.33398
+                    -64.140835,
+                    -31.392223
                 ]
-            }
+            },
+            "properties": {
+                "name": "Centro de Salud 03",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.14312,
+                    -31.382094
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 04",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.130523,
+                    -31.38671
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 05",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.297509,
+                    -31.328234
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 06",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.154844,
+                    -31.400323
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 07",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.129877,
+                    -31.42774
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 08",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.214045,
+                    -31.404858
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 09",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.115241,
+                    -31.424821
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 10",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.164298,
+                    -31.439884
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 11",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.108546,
+                    -31.461254
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 12",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.187019,
+                    -31.372854
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 13",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.163623,
+                    -31.386973
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 14",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.17868,
+                    -31.339332
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 15",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.205005,
+                    -31.375095
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 16",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.175116,
+                    -31.366377
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 17",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.132035,
+                    -31.3742
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 18",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.194711,
+                    -31.375781
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 19",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.209641,
+                    -31.377583
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 20",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.195278,
+                    -31.363655
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 21",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246039,
+                    -31.333794
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 57",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246645,
+                    -31.421133
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 65",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.256249,
+                    -31.320521
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 66",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263531,
+                    -31.314622
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 67",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.147241,
+                    -31.466094
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 68",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263059,
+                    -31.421591
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 76",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.245595,
+                    -31.449049
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 70",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.132983,
+                    -31.452237
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 71",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.105464,
+                    -31.3549
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 74",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.160116,
+                    -31.464194
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 75",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.161218,
+                    -31.358182
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 78",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.198739,
+                    -31.49996
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 79",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.122772,
+                    -31.415523
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 80",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.131531,
+                    -31.414726
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 58",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.111198,
+                    -31.454212
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 81",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.283057,
+                    -31.31565
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 82",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.236788,
+                    -31.43061
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 83",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.248138,
+                    -31.323999
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 61",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.088289,
+                    -31.402747
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 84",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.134929,
+                    -31.367224
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 85",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.21674,
+                    -31.48133
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 86",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.232945,
+                    -31.467755
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 59",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.175563,
+                    -31.412119
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud DEM Centro",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.210078,
+                    -31.407978
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud DEM (O)",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.180834,
+                    -31.379462
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud DEM (N)",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.175563,
+                    -31.412119
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud DAPS",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.136815,
+                    -31.417361
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud Hogar",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.179886,
+                    -31.40666
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud SOM",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.176152,
+                    -31.412997
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud H.Urg",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.180816,
+                    -31.380255
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud H.Infantil",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.060649,
+                    -31.369148
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 69",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.058155,
+                    -31.381583
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 72",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.263787,
+                    -31.454629
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 87",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.063697,
+                    -31.409802
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 88",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.271102,
+                    -31.384838
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 77",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.246867,
+                    -31.483454
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 73",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.108254,
+                    -31.395187
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 98",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.195073,
+                    -31.512324
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 89",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.082079,
+                    -31.466119
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 90",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.113211,
+                    -31.4393
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 91",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.230987,
+                    -31.332424
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 92",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.250338,
+                    -31.4276
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 93",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.151873,
+                    -31.356012
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 94",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.257417,
+                    -31.414797
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 63",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.147995,
+                    -31.453375
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 95",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.190225,
+                    -31.37184
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 60",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.129192,
+                    -31.442386
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 96",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.234095,
+                    -31.488298
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 97",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.196481,
+                    -31.395302
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 25",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.269734,
+                    -31.31351
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 62",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.165257,
+                    -31.452677
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud 64",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.187222,
+                    -31.411175
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud Med.Prev.",
+                "type": "salud"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.21935,
+                    -31.469147
+                ]
+            },
+            "properties": {
+                "name": "Centro de Salud H.Prin.Ast",
+                "type": "salud"
+            },
+            "type": "Feature"
         }
     ],
     "type": "FeatureCollection"
