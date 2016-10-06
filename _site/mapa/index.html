@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mapa</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="canonical" href="http://yourdomain.com/mapa/">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Jekyll CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="/css/personal.css">
+
+  <!-- JQuery 2.1 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+
+  <body>
+    <header class="header-hidden">
+      <h1>Mapeo colectivo de los Cortaderos</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+<!-- ============== -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <header class="header-hidden">
+    <h2>Menú de Navegación</h2>
+  </header>
+
+  <div class="container-fluid" style="padding-top: 5px; padding-bottom: 5px;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div><!--/ navbar-header -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav">
+	
+          
+            <li><a href="/api/">API</a></li>
+          
+        
+          
+        
+          
+            <li><a href="/">Inicio</a></li>
+          
+        
+          
+        
+          
+            <li><a href="/mapa/">Mapa</a></li>
+          
+        
+      </ul>
+      
+    </div><!--/ collapse navbar-collapse -->
+  </div><!--/ container-fluid -->
+</nav>
+
+
+    <!-- Main Content -->
+    <!-- ============ -->
+    <div class="main">
+      <div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-sm-9 col-md-9">
+      <div id="map"></div>
+      <div id="legend"><h3>Referencias</h3></div>
+    </div><!--/col -->
+
+    <div class="col-sm-3 col-md-3">
+      <div class="box-def">
+	<h3 id="nombre">Cortadero</h3>
+	<p id="densidad">Densidad demográfica = ?</p>
+
+	<!-- Acceso a gas -->
+	<ul id="accesoGas"></ul>
+
+	<!-- Acceso a agua -->
+	<ul id="accesoAgua"></ul>
+	
+      </div><!--/box -->
+    </div><!--/col -->
+    
+  </div><!--/row -->
+</div><!--/container-fluid -->
+
+
+
+<!-- Modal Modificar atributos instituciones existentes -->
+<!-- ================================================== -->
+<div class="modal fade" id="modifyWindow" tabindex="-1" role="dialog"
+     aria-labelledby="modifyWindowLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	  <span aria-hidden="true">&times;</span>
+	</button>
+        <h4 class="modal-title" id="modifyWindowLabel">Modificar</h4>
+      </div>
+      <div class="modal-body">
+	<p id="showCoord">Coordinadas</p>
+        <form>
+          <div class="form-group">
+	    <label for="formName" class="control-label">Nombre:</label>
+	    <input type="text" class="form-control" id="formName">
+          </div>
+          <div class="form-group">
+	    <label for="formText" class="control-label">Información Adicional:</label>
+	    <textarea class="form-control" id="formText"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button id="modifyButton" type="button" class="btn btn-primary" onclick="">Modificar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Eliminar instituciones existentes -->
+<!-- ======================================= -->
+<div class="modal fade" id="deletWindow" tabindex="-1" role="dialog"
+     aria-labelledby="deletWindowLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	  <span aria-hidden="true">&times;</span>
+	</button>
+        <h4 class="modal-title" id="deletWindowLabel">Eliminar</h4>
+      </div>
+      <div class="modal-body">
+	<p id="showCoord">Coordinadas</p>
+	<p>Eliminar un establecimiento de nuestra lista indica que este no existe más o
+	  no continua funcionando. </p>
+	<p>La actualización de esta modificación no es inmediata, debido a que tiene que
+	  ser corroborada por un tercero para mayor seguridad</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button id="deletButton" type="button" class="btn btn-danger" onclick="">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Crear una nueva instituciones -->
+<!-- =================================== -->
+<div class="modal fade" id="createWindow" tabindex="-1" role="dialog"
+     aria-labelledby="createWindowLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	  <span aria-hidden="true">&times;</span>
+	</button>
+        <h4 class="modal-title" id="createWindowlLabel">Agregar Punto</h4>
+      </div>
+      <div class="modal-body">
+	<p id="showCoord">Coordinadas</p>
+        <form>
+          <div class="form-group">
+	    <label for="formName" class="control-label">Nombre:</label>
+	    <input type="text" class="form-control" id="formName" value="Nombre de la institucion">
+          </div>
+	  <div class="form-group">
+	    <label for="formType" class="control-label">Tipo:</label>
+	    <select id="formType">
+	      <option value="contaderos">Cortadero</option>
+	      <option value="educacion">Institución Educativa</option>
+	      <option value="Salud">Centro de Salud</option>
+	    </select> 
+          </div>
+          <div class="form-group">
+	    <label for="formText" class="control-label">Información Adicional:</label>
+	    <textarea class="form-control" id="formText"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+	  Cerrar
+	</button>
+        <button id="createButton" type="button" class="btn btn-primary" onclick="">
+	  Agregar
+	</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Personal script to make plot -->
+<script src="/js/plot_map.js"></script>
+<!-- Modal script -->
+<script src="/js/modal.js"></script>
+<!-- Resize the Map -->
+<script src="/js/resize_map.js"></script>
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM12MMIbSoDFdhTO0yDpXQcZhYryxeFG4&callback=initMap" async defer></script>
+
+    </div><!--/main -->
+
+    <!-- Footer -->
+<!-- ====== -->
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Your awesome title</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Your awesome title</li>
+          <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    
+  </body>
+
+</html>

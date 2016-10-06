@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <header class="header-hidden">
+      <h1>Mapeo colectivo de los Cortaderos</h1>
+    </header>
+    
+    {% include header.html %}
+    
+    <!-- Main Content -->
+    <!-- ============ -->
+    {{ content }}
+
+    {% include footer.html %}
+    {% include js_scripts.html %}
+
+    {% if site.debug %}
+      {% include toc.html %}
+    {% endif %}
+  </body>
+
+</html>

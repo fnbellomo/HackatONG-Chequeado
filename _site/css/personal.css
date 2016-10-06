@@ -1,0 +1,203 @@
+/****************************************
+ * Base structure
+ ****************************************/
+body {
+    font-family: Helvetica, Arial;
+}
+
+.site-name {
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.50;
+    color: #333333;
+    text-align: left;
+}
+
+ol, ul {
+    list-style: outside none none;
+}
+
+.list-icons {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.list-icons li {
+    padding: 0 0 15px 0;
+}
+
+blockquote {
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.title {
+    margin-top: 0;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.header-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 120px;
+}
+/****************************************
+ * NavBar
+ ****************************************/
+.navbar-inverse {
+    background-color: #000;
+}
+
+.navbar-brand > img {
+    display: block;
+    max-width:250px;
+    margin-top: -10px;
+}
+
+.navbar-brand > img.visible-xs{
+    display: block;
+    max-width:200px;
+    margin-top: -10px;
+    
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float: right;
+}
+
+.navbar-custom {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+    font-weight: bold;
+}
+/****************************************
+ * Buttons
+ ****************************************/
+.btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 0;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-default {
+    color: #55acee;
+    border: 1px solid #cccccc;
+}
+
+.btn-default:hover {
+    color: #ffffff;
+    background-color: #339BEB;
+    border-color: #339BEB;
+}
+
+.btn-online {
+    font-size: 20px;
+}
+
+/****************************************
+ * Mapa
+ ****************************************/
+#map {
+    height: 100%;
+}
+
+/*
+#info-box {
+    background-color: white;
+    border: 1px solid black;
+    bottom: 30px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+}
+*/
+#legend {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+}
+
+#legend h3 {
+    margin-top: 0;
+}
+
+#legend img {
+    vertical-align: middle;
+    display: inline;
+}
+
+.legend-item {
+
+}
+
+.legend-item p{
+    display: inline;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    fill: rgb(51, 51, 51);
+}
+
+/****************************************
+ * Box
+ ***************************************/
+.box-def {
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 3px 4px 15px -6px #000;
+    padding: 20px 25px;
+    position: relative;
+    text-align: left;
+}
+
+.box-def h3 {
+    color: #292636;
+    border-bottom: 1px solid #D4DFF6;
+    padding: 0px 15px 18px;
+    text-align: center;
+}
+
+.box-def p {
+    color: #87818C;
+    padding: 0px 15px;
+}
