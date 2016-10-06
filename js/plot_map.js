@@ -11,7 +11,6 @@ var map;
 var cortaderosLayer;
 var healthLayer;
 var educationLayer;
-var newElementLayer
 
 // Variables used to show or hide the different layers
 var showCortaderosLayer = true;
@@ -25,7 +24,7 @@ var uniqueId = function() {
     return ++currentId;
 }
 
-// infoWindow variable
+// General infoWindow variable
 var infoWindow;
 
 
@@ -40,7 +39,6 @@ function initMap() {
     cortaderosLayer = new google.maps.Data();
     healthLayer     = new google.maps.Data();
     educationLayer  = new google.maps.Data();
-    newElementLayer = new google.maps.Data();
 
     // Load GeoJSON with the data of each layer
     cortaderosLayer.loadGeoJson(
@@ -98,91 +96,24 @@ function initMap() {
 
     // Define the diferents infoWindow then the user click in some point
     // -----------------------------------------------------------------
-    // Cortadero infowindow
+    // Cortaderos infowindow
     cortaderosLayer.addListener('click', function (event) {
-	// I cant pass data with space to the modal.
-	// Replace the space with '_'
-	var name = event.feature.getProperty('name').split(' ').join('_');
-	var type = event.feature.getProperty('type');
-	var lat = event.latLng.lat();
-	var lng = event.latLng.lng();
-
-	// Text to show
-        infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
-			      'Modificar</button>' + 
-			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element="cortaderos">' +
-			      'Eliminar</button>' + '</div>');
-
-	// Position of the point
-        var anchor = new google.maps.MVCObject();
-        anchor.setValues({
-            position: event.latLng,
-            anchorPoint: new google.maps.Point(0, 0) // Ofset del text-box a las coordenadas
-        });
-        infoWindow.open(map, anchor);
-    });
-
-    // Health infowindow
+	generateInfoWindow(event);
+    })
+    
+    // Healt infowindow
     healthLayer.addListener('click', function (event) {
-	// I cant pass data with space to the modal.
-	// Replace the space with '_'
-	var name = event.feature.getProperty('name').split(' ').join('_');
-	var type = event.feature.getProperty('type');
-	var lat = event.latLng.lat();
-	var lng = event.latLng.lng();
-
-	// Text to show
-        infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
-			      'Modificar</button> ' + 
-			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
-			      'Eliminar</button>' + '</div>');
-	// Position of the point
-        var anchor = new google.maps.MVCObject();
-        anchor.setValues({
-            position: event.latLng,
-            anchorPoint: new google.maps.Point(0, 0) // Ofset del text-box a las coordenadas
-        });
-        infoWindow.open(map, anchor);
-    });
-
+	generateInfoWindow(event);
+    })
+    
     // Education infowindow
     educationLayer.addListener('click', function (event) {
-	// I cant pass data with space to the modal.
-	// Replace the space with '_'
-	var name = event.feature.getProperty('name').split(' ').join('_');
-	var type = event.feature.getProperty('type');
-	var lat = event.latLng.lat();
-	var lng = event.latLng.lng();
-	
-	// Text to show
-        infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
-			      '<h4>' + event.feature.getProperty('name') + '</h4>' +
-			      '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
-			      'Modificar</button>' + 
-			      '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
-			      'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
-			      'Eliminar</button>'  + '</div>');
-	// Position of the point
-        var anchor = new google.maps.MVCObject();
-        anchor.setValues({
-            position: event.latLng,
-            anchorPoint: new google.maps.Point(0, 0) // Ofset del text-box a las coordenadas
-        });
-        infoWindow.open(map, anchor);
-    });
+	generateInfoWindow(event);
+    })
+    
 
-
-    // Define the diferents actions then the user mouseover some point
-    // ---------------------------------------------------------------
+    // Define the diferents actions then the user mouse over some point
+    // ----------------------------------------------------------------
     cortaderosLayer.addListener('mouseover', function(event) {
 	// Set the name
 	document.getElementById('nombre').textContent =  event.feature.getProperty('name');
@@ -252,19 +183,19 @@ var createMarker = function(event) {
 }
 
 
-
 var deleteMarker = function(id) {
     // Removes a marker that created the user
-    
     var marker = markers[id]; // find the marker by given id
     marker.setMap(null);
     infoWindow.close();
 }
 
+
 var closeInfoWindow = function(){
     // dummy function to close infoWindow from other function
     infoWindow.close();
 }
+
 
 function showHideLayers(element) {
     // Show hide the differents layers
@@ -296,7 +227,6 @@ function showHideLayers(element) {
 }
 
 
-
 function makeCortarderoList(event, elementId, property) {
     var elementList = document.getElementById(elementId);
     // Remove all element in the list
@@ -317,4 +247,33 @@ function makeCortarderoList(event, elementId, property) {
         //called elementList
         elementList.appendChild(newListItem);
     }
+}
+
+
+function generateInfoWindow(event) {
+    // Display the infoWindow of the diffents layers
+    
+    // I cant pass data with space to the modal.
+    // Replace the space with '_'
+    var name = event.feature.getProperty('name').split(' ').join('_');
+    var type = event.feature.getProperty('type');
+    var lat = event.latLng.lat();
+    var lng = event.latLng.lng();
+    
+    // Text to show
+    infoWindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">' +
+			  '<h4>' + event.feature.getProperty('name') + '</h4>' +
+			  '<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyWindow" ' +
+			  'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
+			  'Modificar</button>' + 
+			  '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletWindow" ' +
+			  'data-name=' + name + ' data-lat=' + lat + ' data-lng=' + lng + ' data-element=' + type + '>' +
+			  'Eliminar</button>'  + '</div>');
+    // Position of the point
+    var anchor = new google.maps.MVCObject();
+    anchor.setValues({
+        position: event.latLng,
+        anchorPoint: new google.maps.Point(0, 0) // Ofset del text-box a las coordenadas
+    });
+    infoWindow.open(map, anchor);
 }
